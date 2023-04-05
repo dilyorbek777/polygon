@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+/* 0304 */
+
+.links{
+    display: flex;
+    width: 100%;
+    background-color: #000;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.links a{
+    color: aliceblue;
+    font-weight: 900;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+}
+
+nav {
+    width: 100%;
+    min-height: 90px;
+    padding: 0 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    box-sizing: border-box;
+    color: #fff;
+    max-height: 55px;
+    background-color: #030402;
+    position: relative;
+
+}
+
+.fa-bars-staggered {
+    padding: 10px;
+    background-color: transparent;
+    border: none;
+    display: none;
+    font-size: 25px;
+    color: #fff;
+}
+
+
+/* .links-leftNav {
+    display: flex;
+    width: 80%;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+} */
+
+nav button img {
+    width: 30px;
+}
+
+
+nav ul.links {
+    width: 80%;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+
+}
+
+.links {
+    display: flex;
+}
+
+nav ul li {
+    text-align: center;
+}
+
+
+
+#cards {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    justify-content: center;
+    
+    gap: 30px;
+    width: 100%;
+    height: auto;
+    padding: 20px 0;
+}
+
+nav ul a {
+    color: #000000;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 900;
+    line-height: 50px;
+}
+
+nav ul button,
+nav ul a,
+nav ul i {
+    color: #000000;
+    text-align: center;
+    font-weight: 900;
+
+}
+
+nav ul button {
+    font-weight: 700;
+
+}
+
+.logo {
+    font-size: 30px;
+    color: #000000;
+    font-weight: 900;
+}
+
+@media only screen and (max-width:1074px) {
+    .links {
+        display: none;
+    }
+
+    .responsive {
+        width: 40%;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        background-color: transparent;
+        animation: leftfade 3s;
+        overflow: hidden;
+        background-color: #030402;
+
+    }
+
+
+    .responsive li {
+        width: 100%;
+        text-align: start;
+        padding: 3px 20px;
+
+    }
+
+    .fa-bars-staggered {
+        display: block;
+        color: #FFFFFF;
+        font-size: 30px;
+    }
+
+
+}
